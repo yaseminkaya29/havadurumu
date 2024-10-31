@@ -2,7 +2,7 @@
 <html lang="tr">
 
 <head>
-    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -65,7 +65,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo.png" width="30" height="30" alt="Logo" style="border-radius:20px;">
+                <img src="assets/logo.png" width="30" height="30" alt="Logo" style="border-radius:20px;">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -244,7 +244,7 @@
       <br><br>
     <!-- Sayfanın alt kısmına JavaScript ekleme -->
    <div class="volume-container" style="text-align: center; padding: 20px; position: relative; bottom: 0;">
-    <img id="toggleImage" src="assets/img/muted.png" alt="Muted" 
+    <img id="toggleImage" src="assets/muted.png" alt="Muted" 
          style="cursor: pointer; width: 50px; height: auto; 
                 border: 1px solid transparent; 
                 border-radius: 10px; 
@@ -272,11 +272,11 @@
 
     toggleImage.addEventListener('click', () => {
         if (isMuted) {
-            toggleImage.src = 'assets/img/sound.png'; // Ses resmi ile değiştir
+            toggleImage.src = 'assets/sound.png'; // Ses resmi ile değiştir
             video.muted = false; // Videoyu aç
             volumeControl.style.display = 'inline'; // Ses kaydırıcısını göster
         } else {
-            toggleImage.src = 'assets/img/muted.png'; // Mute resmi ile değiştir
+            toggleImage.src = 'assets/muted.png'; // Mute resmi ile değiştir
             video.muted = true; // Videoyu kapat
             volumeControl.style.display = 'none'; // Ses kaydırıcısını gizle
         }
