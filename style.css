@@ -1,0 +1,260 @@
+html{
+    position: relative;    
+    font-weight:bold;
+}
+html, body{
+   
+    font-weight:bold;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Scrollbar'ları gizlemek için */
+}
+body{
+    font-weight:bold;
+}
+.meteo-title {
+    background: rgba(0, 0, 0, 0.7); /* Siyah yarı saydam arka plan */
+    padding: 10px; /* İçerik ile kenar arasındaki boşluk */
+    border-radius: 5px; /* Kenarları yuvarlatma */
+}
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Diğer içeriklerin altında kalmasını sağlar */
+            overflow: hidden;
+        }
+        .video-background video {
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .content {
+            position: relative; /* İçeriğin konumlandırılmasını sağlar */
+            z-index: 1; /* İçeriği ön plana almak için */
+            color: white; /* Yazı rengini ayarlamak için */
+            text-align: center; /* Metni ortalamak için */
+            padding: 20px;
+        }
+body{
+    /* Default background */
+    background: linear-gradient(#0f7de9,#23f2eb);
+    color: #fff;
+    font-family:Lobster;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    background-size: cover; /* Arka planın tüm alanı kaplamasını sağlar */
+    background-repeat: no-repeat; /* Arka planın tekrarlanmamasını sağlar */
+    background-attachment: fixed; /* Arka planın kaydırılmasını önler */
+}
+.container{
+    padding-bottom: 80px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h2 a{
+    transition: 0.1s;
+}
+h2 a:hover{
+    color: #ffe946 !important;
+}
+
+.section-title{
+    margin-top: 50px;
+}
+
+.section-title h1{
+    font-size: 50px;
+}
+
+.section-title h2{
+    font-size: 20px;
+}
+
+.section-description{
+    margin-top: 50px;
+    padding: 0 10px;
+}
+#backgroundVideo {
+    position: fixed; /* Videoyu sabitleyin */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Videonun ekranı kaplamasını sağla */
+    z-index: -1; /* Videoyu diğer içeriklerin arkasına yerleştirin */
+  }
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Videoyu ekranı kaplayacak şekilde boyutlandır */
+}
+
+#geolocation {
+    margin-right: 11px;
+}
+#geolocation i{
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #aaa;
+}
+#geolocation:hover i{
+    color: #fff;
+}
+
+/* Weather */
+#meteo-title{
+    text-align: center;
+    margin-top: 25px;
+    color: #fff;
+}
+.text-muted{
+    color: #fff587 !important;
+}
+
+.section-meteo{
+    margin-top: 25px;
+}
+
+.meteo-day{
+    background-color: rgba(255,255,255,0.2);
+    margin: 5px 10px;
+    padding: 10px 25px;
+    text-align:center;
+    min-height: 200px;
+    border-radius: 25px;
+    border: 1px solid #eee;
+    border-bottom: 3px solid #ddd;
+    transition: 0.3s;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.05);
+}
+.meteo-day:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-5px); /* Yukarı kaydırma efekti */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Hover'da daha belirgin gölge */
+}
+
+.meteo-block{
+    margin: 5px 5px;
+    text-align: center;
+    height: 73px;
+}
+
+.meteo-block-title{
+    font-size: 16px !important;
+    color: #444;
+}
+
+.meteo-block-data{
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.meteo-temperature-container{
+    padding-top: 5px;
+    height: 100px;
+}
+.meteo-temperature {
+    margin: 0 auto;
+    font-size: 55px;
+}
+
+.meteo-temperature .wi{
+    color: rgba(54, 50, 50, 0.6);
+}
+.meteo-block-data{
+    /* background-color: rgba(54, 50, 50, 0.8); */
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Loading */
+@keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    display: none;
+    position: relative;    
+    width: 20px !important;
+    height: 20px !important;
+    -webkit-transform: translate(-50px, -50px) scale(1) translate(50px, 50px);
+    transform: translate(-50px, -50px) scale(1) translate(50px, 50px);
+}
+
+.loading div {
+    position: absolute;
+    -webkit-animation: loading 1s linear infinite;
+    animation: loading 1s linear infinite;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 2px 0 0 #ffffff;
+    -webkit-transform-origin: 10px 11px;
+    transform-origin: 10px 11px;
+}
+
+.inload{
+    display: inline-block !important;
+}
+
+#search-loading{
+    margin-right: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1100px){
+    .meteo-day:first-child{
+        flex: 100%;
+    }
+    .meteo-day{
+        flex: 45%;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .meteo-day{
+        flex: 100%;
+    }
+}
